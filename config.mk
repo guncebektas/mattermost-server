@@ -10,7 +10,7 @@
 # Must be space separated names.
 #
 # Example: mysql postgres elasticsearch
-# ENABLED_DOCKER_SERVICES ?= postgres
+# ENABLED_DOCKER_SERVICES ?= prometheus grafana
 
 # Disable entirely the use of docker
 MM_NO_DOCKER ?= true
@@ -20,7 +20,7 @@ RUN_SERVER_IN_BACKGROUND ?= false
 
 # Data loaded by default in openldap when container starts.
 #
-# Posible options: test or qa
+# Possible options: test or qa
 LDAP_DATA ?= test
 
 # Mock the CWS.

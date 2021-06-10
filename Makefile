@@ -153,7 +153,7 @@ endif
 
 start-docker-check:
 ifeq (,$(findstring minio,$(ENABLED_DOCKER_SERVICES)))
-  TEMP_DOCKER_SERVICES:=$(TEMP_DOCKER_SERVICES) minio
+  TEMP_DOCKER_SERVICES:=$(TEMP_DOCKER_SERVICES) # minio
 endif
 ifeq ($(BUILD_ENTERPRISE_READY),true)
   ifeq (,$(findstring openldap,$(ENABLED_DOCKER_SERVICES)))
